@@ -1,3 +1,10 @@
+
+/** FindGuitarTester program is used to find different types of guitars in Rick's guitar inventory
+*@author Manaswitha
+*@version 1.0
+*@since 09-14-2017
+*/
+
 public class FindGuitarTester {
 
   public static void main(String[] args) {
@@ -6,8 +13,9 @@ public class FindGuitarTester {
     initializeInventory(inventory);
 
     Guitar whatErinLikes = new Guitar("", 0, "fender", "Stratocastor", 
-                                      "electric", "Alder", "Alder");
-    Guitar guitar = inventory.search(whatErinLikes);
+                                      "electric", "Alder", "Alder");  //parameters of the guitar for whatErinlikes 
+    Guitar guitar = inventory.search(whatErinLikes);  // it searches for whatErinLikes from the existing guitars in Inventory
+
     if (guitar != null) {
       System.out.println("Erin, you might like this " +
         guitar.getBuilder() + " " + guitar.getModel() +  " " +
@@ -19,6 +27,8 @@ public class FindGuitarTester {
       System.out.println("Sorry, Erin, we have nothing for you.");
     }
   }
+  
+//This method adds guitars to the inventory
 
   private static void initializeInventory(Inventory inventory) {
     inventory.addGuitar("11277", 3999.95, "Collings", "CJ", "acoustic",
