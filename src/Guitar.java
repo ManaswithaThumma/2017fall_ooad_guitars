@@ -1,22 +1,29 @@
 
-/*Guitar class returns all the parameters of guitar 
- *@author Manaswitha
- *@version 1.0
- *@since 09-14-2017 
- *@param serialNumber 
- *@param builder 
- *@param model 
- *@param type 
- *@param backWood 
- *@param topWood 
- *@param price
+/*
+  * Class: Object-Oriented Design and Analysis
+  * Professor: Orlando Montalvo
+  * Assignment: HW 1   
+  * Student Manaswitha
 */
+/*
+  * Guitar class describes all the parameters of guitars
+  * @author manaswitha
+ */
 
 public class Guitar {
 
   private String serialNumber, builder, model, type, backWood, topWood;
   private double price;
-//Constructor
+/*
+ * Constructor Guitar creates new guitar
+ * @param serialNumber
+ * @param price
+ * @param builder
+ * @param model
+ * @param type
+ * @param backwood
+ * @param topwood
+ */
   public Guitar(String serialNumber, double price,
                 String builder, String model, String type,
                 String backWood, String topWood) {
@@ -29,41 +36,58 @@ public class Guitar {
     this.topWood = topWood;
   }
 
-  //@return serialNumber
+  /*
+   * @return serialNumber
+   */
   public String getSerialNumber() {
     return serialNumber;
   }
 
-//@return price
+/*
+ * @return price
+ */
   public double getPrice() {
     return price;
   }
-
+/*
+  * sets new price to the guitar
+  * @param newPrice
+ */
   public void setPrice(float newPrice) {
     this.price = newPrice;
   }
   
-//@return builder
+/*
+ * @return builder
+ */
   public String getBuilder() {
     return builder;
   }
   
-//@return model
+/*
+ * @return model
+ */
   public String getModel() {
     return model;
   }
   
-//@return type
+/*
+ * @return type
+ */
   public String getType() {
     return type;
   }
   
-//@return backWood
+/*
+ * @return backWood
+ */
   public String getBackWood() {
     return backWood;
   }
   
-//@return topWood
+/*
+ * @return topWood
+ */
   public String getTopWood() {
     return topWood;
   }
