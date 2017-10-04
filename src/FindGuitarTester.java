@@ -1,17 +1,21 @@
-/*
-  * Class: Object-Oriented Design and Analysis
-  * Professor: Orlando Montalvo
-  * Assignment: HW 1   
-  * Student Manaswitha 
-*/
-/*
- * FindGuitarTester class is used to test guitar and inventory
- * @author manaswitha
+/**
+ * Class: Object-Oriented Design and Analysis
+ * Professor: Orlando Montalvo
+ * Assignment: HW 1   
+ * Date 2017-9-20 
  */
 
+/**
+ * Used to test guitar and inventory classes with required guitar specifications 
+ * and prints the matching guitars
+ * @author Manaswitha
+ * @version 1.3
+ */
 public class FindGuitarTester {
 
-	//@param args
+/**
+ * Runs a short test using Erin as a user. Ignores args.
+ */
   public static void main(String[] args) {
     // Set up Rick's guitar inventory
     Inventory inventory = new Inventory();
@@ -34,9 +38,9 @@ public class FindGuitarTester {
   }
   
   
-/*
- * initialize inventory adds all the guitars to the inventory
- * @param inventory
+/**
+ * Adds all the guitars to the inventory
+ * @param inventory stores all the Guitars
  */
   private static void initializeInventory(Inventory inventory) {
     inventory.addGuitar("11277", 3999.95, "Collings", "CJ", "acoustic",

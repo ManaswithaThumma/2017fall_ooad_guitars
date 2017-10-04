@@ -1,27 +1,29 @@
-/*
+/**
   * Class: Object-Oriented Design and Analysis
   * Professor: Orlando Montalvo
   * Assignment: HW 1   
-  * Student Manaswitha
-*/
-/*
-  * Guitar class describes all the parameters of guitars
-  * @author manaswitha
- */
+  * Date 2017-9-20
+  */
 
+/**
+  * Holds all the characteristics of guitar
+  * @author Manaswitha
+  * @version 1.3
+  */
 public class Guitar {
 
   private String serialNumber, builder, model, type, backWood, topWood;
   private double price;
-/*
+
+/**
  * Constructor Guitar creates new guitar
- * @param serialNumber
- * @param price
- * @param builder
- * @param model
- * @param type
- * @param backwood
- * @param topwood
+ * @param serialNumber the Guitar serial number
+ * @param price the Guitar price 
+ * @param builder the Guitar builder
+ * @param model the Guitar model
+ * @param type the Guitar type
+ * @param backwood the wood used for back of the Guitar
+ * @param topwood the wood used for front of the Guitar
  */
   public Guitar(String serialNumber, double price,
                 String builder, String model, String type,
@@ -35,57 +37,57 @@ public class Guitar {
     this.topWood = topWood;
   }
 
-  /*
-   * @return serialNumber
+  /**
+   * Gets the Guitar serialNumber
    */
   public String getSerialNumber() {
     return serialNumber;
   }
 
-/*
- * @return price
+/**
+ * Gets the Guitar price
  */
   public double getPrice() {
     return price;
   }
-/*
-  * sets new price to the guitar
-  * @param newPrice
+/**
+ * Sets new price to the guitar
+ * @param newPrice for the Guitar
  */
   public void setPrice(float newPrice) {
     this.price = newPrice;
   }
   
-/*
- * @return builder
+/**
+ * Gets the Guitar builder
  */
   public String getBuilder() {
     return builder;
   }
   
-/*
- * @return model
+/**
+ * Gets the Guitar model
  */
   public String getModel() {
     return model;
   }
   
-/*
- * @return type
+/**
+ * Gets the Guitar type
  */
   public String getType() {
     return type;
   }
   
-/*
- * @return backWood
+/**
+ * Gets the wood used for back of the Guitar
  */
   public String getBackWood() {
     return backWood;
   }
   
-/*
- * @return topWood
+/**
+ * Gets the wood used for front of the Guitar
  */
   public String getTopWood() {
     return topWood;
